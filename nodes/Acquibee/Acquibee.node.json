@@ -1,0 +1,22 @@
+{
+  "node": "n8n-nodes-acquibee.acquibee",
+  "nodeVersion": "1.0",
+  "codexVersion": "1.0",
+  "categories": [
+    "Sales & Marketing",
+    "CRM"
+  ],
+  "resources": {
+    "credentialDocumentation": [
+      {
+        "url": "https://app.acquibee.de/api_documentation/index.html"
+      }
+    ],
+    "primaryDocumentation": [
+      {
+        "url": "https://app.acquibee.de/api_documentation/index.html"
+      }
+    ]
+  },
+  "alias": ["CRM", "Clients", "Contacts", "Leads"]
+}
