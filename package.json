@@ -18,6 +18,9 @@
 	"engines": {
 		"node": ">=20"
 	},
+	"publishConfig": {
+		"access": "public"
+	},
 	"scripts": {
 		"build": "n8n-node build",
 		"build:watch": "tsc --watch",
