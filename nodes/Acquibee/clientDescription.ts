@@ -62,7 +62,7 @@ export const clientsFields: INodeProperties[] = [
 				operation: ['getClientById', 'deleteClientById', 'updateClientById'],
 			},
 		},
-		hint: 'Enter the numeric ID of your client. Client must belong to you or someone from your team',
+		hint: 'Enter the numeric ID of your client. Client must belong to you or someone from your team.',
 	},
 	{
 		displayName: 'Additional Fields',
