@@ -25,19 +25,19 @@ export const clientsFields: INodeProperties[] = [
 				action: 'Get many clients',
 			},
 			{
-				name: 'Get a Client',
+				name: 'Get',
 				value: 'getClientById',
 				description: 'Get a client by ID',
 				action: 'Get a client by ID',
 			},
 			{
-				name: 'Update a Client',
+				name: 'Update',
 				value: 'updateClientById',
 				description: 'Update a client by ID',
 				action: 'Update a client by ID',
 			},
 			{
-				name: 'Delete a Client',
+				name: 'Delete',
 				value: 'deleteClientById',
 				description: 'Delete a client by ID',
 				action: 'Delete a client by ID',
