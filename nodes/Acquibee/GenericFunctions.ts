@@ -34,7 +34,6 @@ export async function acquibeeApiRequest(
 			method,
 			url: `${baseUrl}${opts.url}`,
 			headers: {
-				'x-acquibee-token': creds.apiToken as string,
 				'Accept': 'application/json',
 				'Content-Type': 'application/json',
 				...(opts.headers ?? {}),
@@ -44,8 +43,11 @@ export async function acquibeeApiRequest(
 			json: true,
 		};
 
-		// eslint-disable-next-line @n8n/community-nodes/no-http-request-with-manual-auth -- shared helper used in both IExecuteFunctions and ILoadOptionsFunctions; the latter lacks httpRequestWithAuthentication
-		const response = await this.helpers.httpRequest(options);
+		const response = await this.helpers.httpRequestWithAuthentication.call(
+			this,
+			'acquibeeApi',
+			options,
+		);
 		return response;
 	} catch (error) {
 		return handleApiError.call(this, error);
